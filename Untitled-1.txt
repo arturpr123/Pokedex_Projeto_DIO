@@ -1,0 +1,55 @@
+
+REQUISIÇÃO HTTP:
+
+- URL: 'https://pokeapi.co/api/v2/pokemon'
+    ${IP}/${path = caminho de identificação do recurso}
+
+- IP: 'https://pokeapi.co'
+
+Request Method: GET | POST | PUT | DELETE
+
+Request Headers:
+
+- Configuração da página (cliente);
+
+accept:
+
+    text/html
+    application/xhtml+xml;
+    application/xml;q=0.9;
+    image/avif;
+    image/webp;
+    */*;q=0.8;
+
+accept-language:
+    pt-BR;q=1
+    pt-PT;q=0.9
+    en-US;q=0.8
+
+authorization:
+    Basic;
+    Bearer;
+
+Request body:
+
+{
+    "name": "teste"
+}
+
+Status Code:
+
+- Explica o que aconteceu com a requisição.
+
+- 100 - 199: INFORMATIONAL;
+- 200 - 299: SUCCESS;
+- 300 - 399: REDIRECTION;
+- 400 - 499: CLIENT ERROR;
+- 500 - 599: SERVER INTERNAL ERROR;
+
+Response Headers:
+
+- Configuração da página (servidor);
+- content-type: application/json;
+
+Response Body:
+
