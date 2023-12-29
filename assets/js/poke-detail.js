@@ -36,35 +36,120 @@ function convertPokemonDetail(pokemon) {
                 </div>
                 <div class="pokemonStats ${pokemon.type}">
                     <table class="typeColor types">
-                    ${pokemon.types.map(
-                      (type) => `<td class="type ${type}">${type}</td>`
-                    ).join('')}                        
+                    ${pokemon.types
+                      .map(
+                        (type) => `
+                      <tr>                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                                              
+                        <td class="type ${type}">${type}</td>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>`
+                      )
+                      .join("")}                        
                     </table>
                     <p class="info types">Base Status</p>
                     <table class="stats typeColor types">
                         <tr class="typeColor types">
                             <th class="typeColor types">HP</th>
                             <td>${pokemon.stats[0]}</td>
+                            <td class="progressBar">
+                              <div class="${pokemon.type}" style="width: ${pokemon.stats[0]}px"></div>
+                            </td>
                         </tr>
                         <tr class="typeColor types">
                             <th class="typeColor types">ATK</th>
                             <td>${pokemon.stats[1]}</td>
+                            <td class="progressBar">
+                              <div class="${pokemon.type} "style="width: ${pokemon.stats[1]}px"></div>
+                            </td>
                         </tr>
                         <tr class="typeColor types">
                             <th>DEF</th>
                             <td>${pokemon.stats[2]}</td>
+                            <td class="progressBar">
+                              <div class="${pokemon.type}" style="width: ${pokemon.stats[2]}px"></div>
+                            </td>
                         </tr>
                         <tr class="typeColor types">
                             <th>SP-ATK</th>
                             <td>${pokemon.stats[3]}</td>
+                            <td class="progressBar">
+                              <div class="${pokemon.type}" style="width: ${pokemon.stats[3]}px"></div>
+                            </td>
                         </tr>
                         <tr class="typeColor types">
                             <th>SP-DEF</th>
                             <td>${pokemon.stats[4]}</td>
+                            <td class="progressBar">
+                            <div class="${pokemon.type} "style="width: ${pokemon.stats[4]}px;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <th>SPD</th>
                             <td>${pokemon.stats[5]}</td>
+                            <td class="progressBar">
+                              <div class="${pokemon.type}" style="width: ${pokemon.stats[5]}px"></div>
+                            </td>
                         </tr>
                     </table>
                 </div>

@@ -29,10 +29,12 @@
 
 .fire {
     background-color: #f08030;
+    color: #f08030;
 }
 
 .water {
     background-color: #6890f0;
+    color: #6890f0;
 }
 
 .grass {
@@ -42,58 +44,72 @@
 
 .electric {
     background-color: #f8d030;
+    color: #f8d030;
 }
 
 .ice {
     background-color: #98d8d8;
+    color: #98d8d8;
 }
 
 .ground {
     background-color: #e0c068;
+    color: #e0c068;
 }
 
 .flying {
     background-color: #a890f0;
+    color: #a890f0;
 }
 
 .poison {
     background-color: #a040a0;
+    color: #a040a0;
 }
 
 .fighting {
     background-color: #c03028;
+    color: #c03028;
 }
 
 .psychic {
     background-color: #f85888;
+    color: #f85888;
 }
 
 .dark {
     background-color: #705848;
+    color: #705848;
 }
 
 .rock {
     background-color: #b8a038;
+    color: #b8a038;
 }
 
 .bug {
     background-color: #a8b820;
+    color: #a8b820;
 }
 
 .ghost {
     background-color: #705898;
+    color: #705898;
 }
 
 .steel {
     background-color: #b8b8d0;
+    color: #b8b8d0;
 }
 
 .dragon {
     background-color: #6c36f1;
+    color: #6c36f1;
 }
 
 .fairy {
     background-color: #fcabc6;
+    color: #fcabc6;
 }
 
 .pokemon .name {
@@ -273,4 +289,24 @@ a {
 
 .info {
     text-align: center;
+}
+
+th {
+    max-width: 200px;
+}
+
+td {
+    max-width: 300px;
+}
+
+td.progressBar {
+    width: 3000px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+td.progressBar div {
+    height: 100%;
+    border-radius: 10px;
 }
